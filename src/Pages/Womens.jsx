@@ -11,7 +11,7 @@ const Womens = () => {
       <div >
          <img src="https://clothify-two.vercel.app/assets/WomensBanner-CNgoJ09v.png" alt="" className='w-screen px-10' />
       </div>
-      <div className='mx-auto max-w-2xl  sm:pt-24 lg:max-w-7xl lg:px-8'>
+      <div className='mx-auto max-w-2xl sm:mb-24  sm:pt-24 lg:max-w-7xl lg:px-8'>
          <h2 className='text-2xl font-bold tracking-tight text-gray-900 text-center md:text-start '>Women's Collection</h2>
          <div className='mt-6 grid grid-cols-1 gap-x-6 gap-y-10 px-6 md:px-0 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8'>
           {
