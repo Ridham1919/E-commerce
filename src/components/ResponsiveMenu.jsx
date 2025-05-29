@@ -52,10 +52,12 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
             </Link>
           </ul>
         </nav>
-      </div>
+        <div className='mt-50'>
         <h1>
           Made with ❤️ by <a href="#">Ridham</a>
         </h1>
+      </div>
+      </div>
     </div>
   );
 };
