@@ -3,8 +3,8 @@ import React from 'react'
 const MultiBanner = () => {
     return (
         <>
-            <div className='pb-55 p-10'>
-                <h2 className='text-4xl font-bold tracking-tight text-gray-900 text-center font-seif'>New Collection</h2>
+            <div className='pb-55 p-10 '>
+                <h2 className='text-4xl  font-bold tracking-tight text-gray-900 text-center font-seif'>New Collection</h2>
                 <p className='text-center mt-3 md:px-56'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, consequatur reiciendis adipisci
                     suscipit hic excepturi eos eligendi porro delectus harum!</p>
             </div>
