@@ -1,7 +1,7 @@
 import React from 'react'
 const HeroBanner = () => {
   return (
-    <div className='bg-gray-100  md:pt-24 pb-12 '>
+    <div className='bg-gray-100  md:pt-24 pb-6 '>
        <div className='relative max-w-6xl mx-auto md:rounded-2xl pt-28 bg-cover bg-center h-[500px] '
         style={{backgroundImage:`url(https://variety.com/wp-content/uploads/2023/10/jenna-ortega.jpg?w=1002)`,backgroundPosition:`center`}}>
         <div className='absolute inset-0 bg-black md:rounded-2xl bg-opacity-40 flex items-center justify-center'>
