@@ -7,8 +7,8 @@ const HeroBanner = () => {
         <div className='absolute inset-0 bg-black md:rounded-2xl bg-opacity-40 flex items-center justify-center'>
           <div className='text-center text-gray-100 px-4'>
                    <h1 className='text-3xl md:text-5xl lg:text-6xl sm:mb-40 font-bold ' >Discover Your Style</h1>
-                   <p className='text-lg md:text-xl mb-6'>Shop the latest and find your perfect look</p>
-                   <button className='bg-transparant border border-white hover:bg-white hover:text-black text-white font-semibold py-2 px-4 md:py-3 md:px-6
+                   <p className='text-lg sm:mt-20 md:text-xl mb-6'>Shop the latest and find your perfect look</p>
+                   <button className='bg-transparant border sm:mt-20 border-white hover:bg-white hover:text-black text-white font-semibold py-2 px-4 md:py-3 md:px-6
                    rounded-lg transition duration-300' >Shop Now</button>
           </div>
         </div>
