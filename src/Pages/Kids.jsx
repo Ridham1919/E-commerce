@@ -7,7 +7,7 @@ const Kids = () => {
   const {All_product} = useContext(Shopcontext)
   const kidProducts = All_product.filter((product) => product.category ==="kid")
   return (
-    <div className='m-24  max-w-7xl mx-auto'>
+    <div className='md:mt-32 mt-20 max-w-7xl mx-auto'>
       <div >
          <img src="https://clothify-two.vercel.app/assets/KidsBanner-Bu4nYWZf.png" alt="" className='w-screen px-10' />
       </div>

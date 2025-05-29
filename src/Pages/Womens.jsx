@@ -7,7 +7,7 @@ const Womens = () => {
   const {All_product} = useContext(Shopcontext)
   const WomenProducts = All_product.filter((product) => product.category ==="women")
   return (
-    <div className='m-24  max-w-7xl mx-auto'>
+    <div className='md:mt-32 mt-20 max-w-7xl mx-auto'>
       <div >
          <img src="https://clothify-two.vercel.app/assets/WomensBanner-CNgoJ09v.png" alt="" className='w-screen px-10' />
       </div>
