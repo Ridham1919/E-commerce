@@ -5,7 +5,7 @@ const HeroBanner = () => {
     <div className='bg-gray-100  py-24 '>
        <div className='relative max-w-6xl mx-auto md:rounded-2xl pt-28 bg-cover bg-center h-[500px] '
         style={{backgroundImage:`url(https://variety.com/wp-content/uploads/2023/10/jenna-ortega.jpg?w=1002)`,backgroundPosition:`top`}}>
-        <div className='absolute inset-0 bg-black md:rounded-2xl bg-opacity-40 lg:bg-opacity-25 flex items-center justify-center'>
+        <div className='absolute inset-0 bg-black md:rounded-2xl bg-opacity-40 flex items-center justify-center'>
           <div className='text-center text-gray-100 px-4'>
                    <h1 className='text-3xl md:text-5xl lg:text-6xl font-bold mb-4' >Discover Your Style</h1>
                    <p className='text-lg md:text-xl mb-6'>Shop the latest and find your perfect look</p>
