@@ -2,7 +2,7 @@ import React from 'react'
 const MidBanner = () => {
   return (
      <div className='bg-gray-100 py-24'>
-       <div className='relative  max-w-6xl mx-auto md:rounded-2xl pt-28 bg-cover bg-center h-[500px] '
+       <div className='relative  max-w-6xl mx-auto  pt-28 bg-cover bg-center h-[500px] '
         style={{backgroundImage:`url(https://assets.teenvogue.com/photos/64403f8809e18833cf1d7ab2/16:9/w_5999,h_3374,c_limit/1471768314)`,backgroundPosition:`top`,backgroundAttachment:`fixed` }}>
         <div className='absolute inset-0 bg-black md:rounded-2xl bg-opacity-50 flex items-center justify-center'>
           <div className='text-center text-white px-4'>
