@@ -51,8 +51,8 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
               </button>
             </Link>
           </ul>
-          <div >
-            <h1 className='mt-50'>
+          <div className='mt-50' >
+            <h1 >
               Made with ❤️ by <a href="#">Ridham</a>
             </h1>
           </div>
