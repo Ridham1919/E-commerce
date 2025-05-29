@@ -1,5 +1,4 @@
 import React from 'react'
-// import banner from '../assets/HeroBanner.jpg'
 const HeroBanner = () => {
   return (
     <div className='bg-gray-100  py-24 '>
