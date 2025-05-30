@@ -8,8 +8,15 @@ const MidBanner = () => {
           <div className='text-center text-white px-4'>
                    <h1 className='text-3xl md:text-5xl lg:text-5xl font-bold mb-4'> Winter Collection 2025 </h1>
                    <p className='text-lg md:text-xl mb-6'>Shop the latest and find your perfect look</p>
-                   <button className='bg-transparent border border-white hover:bg-white hover:text-black text-white font-semibold py-2 px-4 md:py-3 md:px-6
-                   rounded-lg transition duration-300' >Shop Now</button>
+<button
+              onClick={() => {
+                const section = document.getElementById("TopSeller");
+                section?.scrollIntoView({ behavior: "smooth" });
+              }}
+              className='bg-transparent border border-white hover:bg-white hover:text-black text-white font-semibold py-2 px-4 md:py-3 md:px-6 rounded-lg transition duration-300'
+            >
+              Shop Now
+            </button>
           </div>
         </div>
        </div>

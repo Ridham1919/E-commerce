@@ -6,7 +6,7 @@ const TopSellers = () => {
   const { All_product } = useContext(Shopcontext)
   return (
     <>
-     <div className='p-10'>
+     <div className='p-10' id='TopSeller'>
   <h2 className='text-4xl font-bold tracking-tight text-gray-900 text-center font-seif'>Top Sellers</h2>
   <p className='text-center mt-3 md:px-56'>
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, consequatur reiciendis adipisci
