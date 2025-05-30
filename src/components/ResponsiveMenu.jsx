@@ -51,11 +51,11 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
               </button>
             </Link>
           </ul>
-          <div className="fixed bottom-10 left-30 transform -translate-x-1/2">
-  <h1>
-    Made with ❤️ by <a href="#" className="underline">Ridham</a>
-  </h1>
-</div>
+          <div className="absolute bottom-10 left-5">
+            <h1>
+              Made with ❤️ by <a href="https://github.com/Ridham1919" target='blank' className="font-bold">Ridham</a>
+            </h1>
+          </div>
 
         </nav>
       </div>
