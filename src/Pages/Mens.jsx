@@ -10,7 +10,7 @@ const Mens = () => {
   return (
     <div className='md:mt-30 mt-20 max-w-7xl mx-auto'>
       <div >
-        <img src={banner} alt="" className='w-screen ' />
+        <img src={banner} alt="" className='w-screen px-6 ' />
       </div>
       <div className='mx-auto max-w-2xl px-4 py-16 sm:pt-24 lg:max-w-7xl lg:px-8'>
         <h2 className='text-2xl font-bold tracking-tight text-gray-900 text-center md:text-start'>Men's Collection</h2>
