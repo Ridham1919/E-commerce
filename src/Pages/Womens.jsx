@@ -9,7 +9,7 @@ const Womens = () => {
   return (
     <div className='md:mt-32 mt-20 max-w-7xl mx-auto'>
       <div >
-        <img src="https://clothify-two.vercel.app/assets/WomensBanner-CNgoJ09v.png" alt="" className='w-screen px-10 sm:5' />
+        <img src="https://clothify-two.vercel.app/assets/WomensBanner-CNgoJ09v.png" alt="" className='w-screen px-10 sm:px-5' />
       </div>
       <div className='mx-auto max-w-2xl px-4 py-16 sm:pt-12 lg:max-w-7xl lg:px-8'>
         <h2 className='text-2xl font-bold tracking-tight text-gray-900 text-center '>Women's Collection</h2>
