@@ -51,9 +51,9 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
               </button>
             </Link>
           </ul>
-          <div className="absolute bottom-30 left-5">
+          <div className="absolute bottom-35 left-5">
             <h1>
-              Made with ❤️ by <a href="https://github.com/Ridham1919" target='blank' className="font-bold pl-5 ">Ridham</a>
+              Made with ❤️ by <a href="https://github.com/Ridham1919" target='blank' className="font-bold pl-2 ">Ridham</a>
             </h1>
           </div>
 
