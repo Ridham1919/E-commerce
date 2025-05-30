@@ -52,7 +52,7 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
             </Link>
           </ul>
         </nav>
-        <div className="absolute bottom-80 left-5">
+        <div className="absolute bottom-[-1px] left-5 pb-5">
             <h1>
               Made with ❤️ by <a href="https://github.com/Ridham1919" target='blank' className="font-bold pl-1 ">Ridham</a>
             </h1>
