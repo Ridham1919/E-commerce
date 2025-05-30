@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-// import Logo from '../assets/Zara_(retailer)-Logo.wine.svg'
+import Logo from '../assets/Zara_(retailer)-Logo.wine.svg'
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
@@ -13,7 +13,7 @@ const Footer = () => {
         {/* Company Info */}
         <div className="mb- md:mb-0">
         <Link to='/'>
-           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQL0C7HQVhUrGNT_ksLA0zu0rqJjLBgjhhVYf1bowerKTW-LaglJxAYn0v_ohF9Fz5Rp8&usqp=CAU" alt="" className='w-16 bg-gray-300 pl-2 md:rounded-1xl '/>
+           <img src={Logo} alt="" className='w-24 bg-gray-300 pl-2 md:rounded-1xl '/>
             </Link>
           <p className="mt-2 text-sm">High-quality, sustainable clothing at affordable prices.</p>
           <p className="mt-2 text-sm">123 Fashion St, Style City, NY 10001</p>

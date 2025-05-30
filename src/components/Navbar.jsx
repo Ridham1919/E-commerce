@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-// import Zara from  '../assets/Zara_(retailer)-Logo.wine.svg'
+import Zara from  '../assets/Zara_(retailer)-Logo.wine.svg'
 import { FiShoppingCart } from "react-icons/fi";
 import { Link } from 'react-router-dom';
 import { HiMenuAlt1, HiMenuAlt3 } from 'react-icons/hi';
@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
        <div className='bg-white px-4 fixed w-full z-50 shadow-sm top-0 shadow-gray-400'>
            <div className='max-w-7xl mx-auto py-2 px-5 flex justify-between items-center'>
-               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQL0C7HQVhUrGNT_ksLA0zu0rqJjLBgjhhVYf1bowerKTW-LaglJxAYn0v_ohF9Fz5Rp8&usqp=CAU" alt="" className='md:w-16 '/>
+               <img src={Zara} alt="" className='md:w-24 w-20'/>
                <div className='flex items-center gap-5'>
                    <nav className='hidden md:block'>
                        <ul className='flex items-center font-semibold text-base gap-7'>
