@@ -37,9 +37,9 @@ const Navbar = () => {
 
                     {/* mobile hambure icons */}
                     {showMenu ? (
-                        <HiMenuAlt1 onClick={toggleMenu} className='cursor-pointer pb-3 transition-all md:hidden' size={30} />
+                        <HiMenuAlt1 onClick={toggleMenu} className='cursor-pointer pb-1 transition-all md:hidden' size={30} />
                     ) : (
-                        <HiMenuAlt3 onClick={toggleMenu} className='cursor-pointer pb-3 transition-all md:hidden' size={30} />
+                        <HiMenuAlt3 onClick={toggleMenu} className='cursor-pointer pb-1 transition-all md:hidden' size={30} />
                     )}
                 </div>
             </div>
