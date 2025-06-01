@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Logo from '../assets/Zara_(retailer)-Logo.wine.svg'
+import Logo from '../assets/R-removebg-preview.png'
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
@@ -13,7 +13,7 @@ const Footer = () => {
         {/* Company Info */}
         <div className="mb- md:mb-0">
         <Link to='/'>
-           <img src={Logo} alt="" className='w-24 bg-gray-300 pl-2 md:rounded-1xl '/>
+           <img src={Logo} alt="" className='w-20 bg-gray-300 py-2 md:rounded-1xl '/>
             </Link>
           <p className="mt-2 text-sm">High-quality, sustainable clothing at affordable prices.</p>
           <p className="mt-2 text-sm">123 Fashion St, Style City, NY 10001</p>
