@@ -14,7 +14,7 @@ const Navbar = () => {
         setShowMenu(!showMenu)
     }
   return (
-       <div className='bg-white px-4 fixed w-full z-50 shadow-sm top-0 shadow-gray-300 h-[14%] items-center content-center'>
+       <div className='bg-white px-4 fixed w-full z-50 shadow-sm top-0 shadow-gray-300  md:h-[14%] items-center content-center'>
            <div className='max-w-7xl mx-auto py-2 px-5 flex justify-between items-center'>
             <div className='w-20'>
                <img src={Logo} alt="" className='md:w-40 w-20 '/>
