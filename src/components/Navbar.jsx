@@ -30,16 +30,16 @@ const Navbar = () => {
                         </ul>
                     </nav>
                     <Link to={'/cart'} className='relative w-10'>
-                        <FiShoppingCart size={25} className='sm:pb-2'/>
+                        <FiShoppingCart size={25} className='sm:mb-2'/>
                         <div className='bg-red-500 w-4 h-4 text-xs absolute -top-2 right-1 flex items-center justify-center rounded-full
                    text-white'>0</div>
                     </Link>
 
                     {/* mobile hambure icons */}
                     {showMenu ? (
-                        <HiMenuAlt1 onClick={toggleMenu} className='cursor-pointer sm:pb-2 transition-all md:hidden' size={30} />
+                        <HiMenuAlt1 onClick={toggleMenu} className='cursor-pointer sm:mb-2 transition-all md:hidden' size={30} />
                     ) : (
-                        <HiMenuAlt3 onClick={toggleMenu} className='cursor-pointer sm:pb-2 transition-all md:hidden' size={30} />
+                        <HiMenuAlt3 onClick={toggleMenu} className='cursor-pointer sm:mb-2 transition-all md:hidden' size={30} />
                     )}
                 </div>
             </div>
