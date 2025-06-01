@@ -17,7 +17,7 @@ const Navbar = () => {
         <div className='bg-white px-4  fixed w-full md:h-[80px] z-50 shadow-sm top-0 shadow-gray-400'>
             <div className='max-w-7xl mx-auto py-2 px-5 flex justify-between items-center'>
                 <div className=''>
-                    <img src={Logo} alt="" className=' sm:w-5  md:mt-3 md:w-[100px] w-20 ' />
+                    <img src={Logo} alt="" className=' sm:w-5 sm:pt-[10px] md:mt-3 md:w-[100px] w-20 ' />
                 </div>
                 <div className='flex mt-3 items-center gap-5'>
                     <nav className='hidden md:block'>
@@ -30,16 +30,16 @@ const Navbar = () => {
                         </ul>
                     </nav>
                     <Link to={'/cart'} className='relative w-10'>
-                        <FiShoppingCart size={25} className='sm:mb-2'/>
+                        <FiShoppingCart size={25} />
                         <div className='bg-red-500 w-4 h-4 text-xs absolute -top-2 right-1 flex items-center justify-center rounded-full
                    text-white'>0</div>
                     </Link>
 
                     {/* mobile hambure icons */}
                     {showMenu ? (
-                        <HiMenuAlt1 onClick={toggleMenu} className='cursor-pointer sm:mb-2 transition-all md:hidden' size={30} />
+                        <HiMenuAlt1 onClick={toggleMenu} className='cursor-pointer  transition-all md:hidden' size={30} />
                     ) : (
-                        <HiMenuAlt3 onClick={toggleMenu} className='cursor-pointer sm:mb-2 transition-all md:hidden' size={30} />
+                        <HiMenuAlt3 onClick={toggleMenu} className='cursor-pointer  transition-all md:hidden' size={30} />
                     )}
                 </div>
             </div>
