@@ -14,11 +14,11 @@ const Navbar = () => {
         setShowMenu(!showMenu)
     }
     return (
-        <div className='bg-white px-4  fixed w-full md:h-[80px] z-50 shadow-sm top-0 shadow-gray-400'>
+        <div className='bg-white px-4 fixed w-full z-50 shadow-sm top-0 shadow-gray-400'>
             <div className='max-w-7xl mx-auto py-2 px-5 flex justify-between items-center'>
-                <div className=''>
+                <Link to='/'>
                     <img src={Logo} alt="" className=' sm:w-5 sm:pt-[10px] md:mt-3 md:w-[100px] w-20 ' />
-                </div>
+                </Link>
                 <div className='flex mt-3 items-center gap-5'>
                     <nav className='hidden md:block'>
                         <ul className='flex items-center font-semibold text-base gap-7'>
