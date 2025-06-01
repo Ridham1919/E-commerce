@@ -17,7 +17,7 @@ const Navbar = () => {
         <div className='bg-white px-4 fixed w-full z-50 shadow-sm top-0 shadow-gray-400'>
             <div className='max-w-7xl mx-auto py-2 px-5 flex justify-between items-center'>
                 <Link to='/'>
-                    <img src={Logo} alt="" className=' sm:w-5 sm:pt-[10px]  md:w-[100px] w-20 ' />
+                    <img src={Logo} alt="" className=' sm:w-5 sm:pt-[10px] md:mb-3  md:w-[100px] w-20 ' />
                 </Link>
                 <div className='flex mt-3 items-center gap-5'>
                     <nav className='hidden md:block'>
