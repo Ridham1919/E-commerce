@@ -19,7 +19,7 @@ const Navbar = () => {
                 <Link to='/'>
                     <img src={Logo} alt="" className=' sm:w-5 sm:pt-[10px] md:mb-3  md:w-[100px] w-20 ' />
                 </Link>
-                <div className='flex mt-3 items-center gap-5'>
+                <div className='flex items-center gap-5'>
                     <nav className='hidden md:block'>
                         <ul className='flex items-center font-semibold text-base gap-7'>
                             <Link to={'/'}><li>Home</li></Link>
