@@ -9,7 +9,7 @@ const MultiBanner = () => {
                     suscipit hic excepturi eos eligendi porro delectus harum!</p>
             </div>
             <div className='bg-gray-100 pl-[7px] '>
-                <div className='grid grid-cols-2 px-4 md:px-0 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 py-6 max-w-6xl mx-auto'>
+                <div className='grid grid-cols-1 px-4 md:px-0 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 py-6 max-w-7xl mx-auto'>
                     {/* first banner */}
                     <div className='relative  h-[250px] '>
                         <img src="https://images.pexels.com/photos/6051248/pexels-photo-6051248.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
