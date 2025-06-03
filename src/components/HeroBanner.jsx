@@ -15,11 +15,7 @@ const HeroBanner = () => {
                 section?.scrollIntoView({ behavior: "smooth" });
               }}
               className='bg-transparent border border-white hover:bg-white hover:text-black text-white font-semibold py-2 px-4 md:py-3 md:px-6 rounded-lg transition duration-300'
-            >
-              Shop Now
-            </button>
-
-
+            > Shop Now </button>
           </div>
         </div>
       </div>

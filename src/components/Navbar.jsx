@@ -14,7 +14,7 @@ const Navbar = () => {
         setShowMenu(!showMenu)
     }
     return (
-        <div className='bg-white px-4 fixed w-full z-50 shadow-sm top-0 shadow-gray-400'>
+        <div className='bg-white px-4 fixed sm:pt-[20px] w-full z-50 shadow-sm top-0 shadow-gray-400'>
             <div className='max-w-7xl mx-auto py-2 px-5 flex justify-between items-center'>
                 <Link to='/'>
                     <img src={Logo} alt="" className=' sm:w-5 sm:pt-[10px] md:mb-3  md:w-[100px] w-20 ' />
