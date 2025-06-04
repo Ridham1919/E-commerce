@@ -5,6 +5,7 @@ import { FiShoppingCart } from "react-icons/fi";
 import { Link } from 'react-router-dom';
 import { HiMenuAlt1, HiMenuAlt3 } from 'react-icons/hi';
 import ResponsiveMenu from './ResponsiveMenu';
+import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/clerk-react';
 
 
 const Navbar = () => {
@@ -26,7 +27,6 @@ const Navbar = () => {
                             <Link to={'/mens'}>Mens</Link>
                             <Link to={'/womens'}> <li>Womens</li></Link>
                             <Link to={'/kids'}><li>Kids</li></Link>
-                            <Link to={'/login'}> <button className='bg-red-500 text-white px-4 py-2 rounded-md'>Login</button></Link>
                         </ul>
                     </nav>
                     <Link to={'/cart'} className='relative w-10'>
@@ -34,6 +34,13 @@ const Navbar = () => {
                         <div className='bg-red-500 w-4 h-4 text-xs absolute -top-2 right-1 flex items-center justify-center rounded-full
                    text-white'>0</div>
                     </Link>
+
+                    <SignedOut>
+                        <SignInButton className='bg-red-500 text-white px-4 py-2 rounded-md' />
+                    </SignedOut>
+                    <SignedIn>
+                        <UserButton />
+                    </SignedIn>
 
                     {/* mobile hambure icons */}
                     {showMenu ? (

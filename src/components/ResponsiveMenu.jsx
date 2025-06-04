@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { FaUserCircle } from "react-icons/fa";
 import { Link } from 'react-router-dom';
-
+import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/clerk-react';
 
 const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
   const menuRef = useRef();
@@ -42,21 +42,19 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
             <Link to="/mens"><li onClick={() => setShowMenu(false)}>Mens</li></Link>
             <Link to="/womens"><li onClick={() => setShowMenu(false)}>Womens</li></Link>
             <Link to="/kids"><li onClick={() => setShowMenu(false)}>Kids</li></Link>
-            <Link to="/login">
-              <button
-                onClick={() => setShowMenu(false)}
-                className="bg-red-500 text-white px-4 py-1 rounded-md"
-              >
-                Login
-              </button>
-            </Link>
+            <SignedOut>
+              <SignInButton className='bg-red-500 text-white px-4 py-2 rounded-md' />
+            </SignedOut>
+            <SignedIn>
+              <UserButton />
+            </SignedIn>
           </ul>
         </nav>
         <div className="absolute  left-5 pt-[350px]">
-            <h1>
-              Made with ❤️ by <a href="https://github.com/Ridham1919" target='blank' className="font-bold pl-1 ">Ridham</a>
-            </h1>
-          </div>
+          <h1>
+            Made with ❤️ by <a href="https://github.com/Ridham1919" target='blank' className="font-bold pl-1 ">Ridham</a>
+          </h1>
+        </div>
       </div>
     </div>
   );
