@@ -29,7 +29,7 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
     >
       <div className=''>
         <div className='flex items-center justify-start gap-3'>
-          <FaUserCircle size={50} />
+          <UserButton size={50} />
           <div>
             <h1>Hello User</h1>
             <h1 className="text-sm text-slate-500">Premium User</h1>
@@ -46,7 +46,7 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
               <SignInButton className='bg-red-500 text-white px-4 py-2 rounded-md' />
             </SignedOut>
             <SignedIn>
-              <UserButton />
+              
             </SignedIn>
           </ul>
         </nav>
