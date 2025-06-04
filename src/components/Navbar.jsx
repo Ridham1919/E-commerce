@@ -36,11 +36,9 @@ const Navbar = () => {
                     </Link>
 
                     <SignedOut>
-                        <SignInButton className='bg-red-500 text-white px-4 py-2 sm:hidden rounded-md' />
+                        <SignInButton className='bg-red-500 text-white px-4 py-2 sm:hidden' />
                     </SignedOut>
-                    <SignedIn>
-                        <UserButton />
-                    </SignedIn>
+                   
 
                     {/* mobile hambure icons */}
                     {showMenu ? (
@@ -48,6 +46,10 @@ const Navbar = () => {
                     ) : (
                         <HiMenuAlt3 onClick={toggleMenu} className='cursor-pointer  transition-all md:hidden' size={30} />
                     )}
+
+                     <SignedIn>
+                        <UserButton />
+                    </SignedIn>
                 </div>
             </div>
             <ResponsiveMenu showMenu={showMenu} setShowMenu={setShowMenu} />
