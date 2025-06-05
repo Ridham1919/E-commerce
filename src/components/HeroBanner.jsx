@@ -40,7 +40,7 @@ const HeroBanner = () => {
       </style>
 
       <div className='bg-gray-100 md:pt-24 pb-6'>
-        <div className='relative max-w-6xl mx-auto md:rounded-2xl h-[500px] overflow-hidden'>
+        <div className='relative max-w-7xl md:ml-8 md:mr-8 mx-auto md:rounded-2xl h-[500px] overflow-hidden'>
           <Swiper
             modules={[Navigation, Autoplay]}
             navigation
@@ -49,16 +49,16 @@ const HeroBanner = () => {
               delay: 2000,
               disableOnInteraction: true,
             }}
-            className='h-full'
-          >
+            className='h-full'>
+
             {banners.map((item, index) => (
               <SwiperSlide key={index}>
                 <div
                   className='bg-cover bg-center h-[500px] w-full relative'
                   style={{
                     backgroundImage: `url(${item.image})`
-                  }}
-                >
+                  }}>
+
                   <div className='absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center'>
                     <div className='text-center text-gray-100 px-4'>
                       <h1 className='text-3xl md:text-5xl lg:text-6xl sm:mb-5 font-bold'>{item.title}</h1>
