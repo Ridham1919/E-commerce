@@ -40,7 +40,7 @@ const HeroBanner = () => {
       </style>
 
       <div className='bg-gray-100 md:pt-24 pb-6'>
-        <div className='relative max-w-7xl md:ml-8 md:mr-8 mx-auto md:rounded-2xl h-[500px] overflow-hidden'>
+        <div className='relative max-w-6xl  mx-auto md:rounded-2xl h-[500px] overflow-hidden'>
           <Swiper
             modules={[Navigation, Autoplay]}
             navigation
