@@ -16,10 +16,10 @@ const HeroBanner = () => {
       title: "New Arrivals Are Here",
       description: "Upgrade your wardrobe with fresh trends"
     },
-     {
-      image: "https://images.wallpapersden.com/image/wxl-jenna-ortega-2022-hd_87875.jpg",
-      title: "Discover Your Style",
-      description: "Shop the latest and find your perfect look"
+    {
+      image: "https://variety.com/wp-content/uploads/2023/06/Variety-Actors-on-Actors-16x9-Jenna-Ortega.jpg",
+      title: "Trendy Collections",
+      description: "Stay ahead with the latest styles"
     }
   ];
 
