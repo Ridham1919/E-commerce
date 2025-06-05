@@ -15,6 +15,11 @@ const HeroBanner = () => {
       image: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f",
       title: "New Arrivals Are Here",
       description: "Upgrade your wardrobe with fresh trends"
+    },
+     {
+      image: "https://images.wallpapersden.com/image/wxl-jenna-ortega-2022-hd_87875.jpg",
+      title: "Discover Your Style",
+      description: "Shop the latest and find your perfect look"
     }
   ];
 
@@ -47,7 +52,7 @@ const HeroBanner = () => {
             loop={true}
             autoplay={{
               delay: 2000,
-              disableOnInteraction: true,
+              disableOnInteraction: false,
             }}
             className='h-full'>
 
