@@ -7,18 +7,16 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
   const menuRef = useRef();
 
   useEffect(() => {
-    const handleOutsideClick = (event) => {
-      if (menuRef.current && !menuRef.current.contains(event.target)) {
-        setShowMenu(false);
-      }
+    const handleClick = () => {
+      setShowMenu(false);
     };
 
     if (showMenu) {
-      document.addEventListener("mousedown", handleOutsideClick);
+      document.addEventListener("mousedown", handleClick);
     }
 
     return () => {
-      document.removeEventListener("mousedown", handleOutsideClick);
+      document.removeEventListener("mousedown", handleClick);
     };
   }, [showMenu]);
 
@@ -27,7 +25,7 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
       ref={menuRef}
       className={`${showMenu ? "left-0" : "-left-[100%]"} fixed bottom-0 top-0 z-20 flex h-screen w-[75%] flex-col justify-between bg-white px-8 pb-6 pt-16 text-black md:hidden rounded-r-xl shadow-md`}
     >
-      <div className=''>
+      <div>
         <div className='flex items-center justify-start gap-3'>
           <SignedIn>
             <UserButton size={100} />
@@ -40,19 +38,19 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
 
         <nav className="mt-12">
           <ul className="space-y-4 text-xl text-black flex flex-col">
-            <Link to="/"><li onClick={() => setShowMenu(false)}>Home</li></Link>
-            <Link to="/mens"><li onClick={() => setShowMenu(false)}>Mens</li></Link>
-            <Link to="/womens"><li onClick={() => setShowMenu(false)}>Womens</li></Link>
-            <Link to="/kids"><li onClick={() => setShowMenu(false)}>Kids</li></Link>
+            <Link to="/"><li>Home</li></Link>
+            <Link to="/mens"><li>Mens</li></Link>
+            <Link to="/womens"><li>Womens</li></Link>
+            <Link to="/kids"><li>Kids</li></Link>
             <SignedOut>
               <SignInButton className='bg-red-500 text-white px-4 py-2 rounded-md' />
             </SignedOut>
-
           </ul>
         </nav>
-        <div className="absolute  left-5 pt-[350px]">
+
+        <div className="absolute left-5 pt-[350px]">
           <h1>
-            Made with ❤️ by <a href="https://github.com/Ridham1919" target='blank' className="font-bold pl-1 ">Ridham</a>
+            Made with ❤️ by <a href="https://github.com/Ridham1919" target='_blank' className="font-bold pl-1">Ridham</a>
           </h1>
         </div>
       </div>
@@ -60,5 +58,4 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
   );
 };
 
-
-export default ResponsiveMenu
+export default ResponsiveMenu;
