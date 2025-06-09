@@ -7,16 +7,18 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
   const menuRef = useRef();
 
   useEffect(() => {
-    const handleClick = () => {
-      setShowMenu(false);
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setShowMenu(false);
+      }
     };
 
     if (showMenu) {
-      document.addEventListener("mousedown", handleClick);
+      document.addEventListener("mousedown", handleClickOutside);
     }
 
     return () => {
-      document.removeEventListener("mousedown", handleClick);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [showMenu]);
 
@@ -38,10 +40,10 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
 
         <nav className="mt-12">
           <ul className="space-y-4 text-xl text-black flex flex-col">
-            <Link to={'/'}><li>Home</li></Link>
-            <Link to={'/mens'}>Mens</Link>
-            <Link to={'/womens'}> <li>Womens</li></Link>
-            <Link to={'/kids'}><li>Kids</li></Link>
+            <Link to="/" onClick={() => setShowMenu(false)}><li>Home</li></Link>
+            <Link to="/mens" onClick={() => setShowMenu(false)}><li>Mens</li></Link>
+            <Link to="/womens" onClick={() => setShowMenu(false)}><li>Womens</li></Link>
+            <Link to="/kids" onClick={() => setShowMenu(false)}><li>Kids</li></Link>
 
             <SignedOut>
               <SignInButton className='bg-red-500 text-white px-4 py-2 rounded-md' />
