@@ -38,10 +38,11 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
 
         <nav className="mt-12">
           <ul className="space-y-4 text-xl text-black flex flex-col">
-            <Link to="/"><li>Home</li></Link>
-            <Link to="/mens"><li>Mens</li></Link>
-            <Link to="/womens"><li>Womens</li></Link>
-            <Link to="/kids"><li>Kids</li></Link>
+            <Link to={'/'}><li>Home</li></Link>
+            <Link to={'/mens'}>Mens</Link>
+            <Link to={'/womens'}> <li>Womens</li></Link>
+            <Link to={'/kids'}><li>Kids</li></Link>
+
             <SignedOut>
               <SignInButton className='bg-red-500 text-white px-4 py-2 rounded-md' />
             </SignedOut>
